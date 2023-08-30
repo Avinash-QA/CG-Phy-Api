@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "lead_id": {
+      "type": "integer"
+    },
+    "web_lead_id": {
+      "type": "string"
+    },
+    "city_id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "lead_id",
+    "web_lead_id",
+    "city_id"
+  ]
+}

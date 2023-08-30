@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "module_id": {
+      "type": "integer"
+    },
+    "attendant": {
+      "type": "integer"
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "limit_days": {
+      "type": "integer"
+    },
+    "sponsor_logo": {
+      "type": "string"
+    },
+    "pictures": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "safety_measures": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "description": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "expert_phone": {
+      "type": "string"
+    },
+    "faqs": {
+      "type": "array",
+      "items": {}
+    },
+    "packages": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "days": {
+              "type": "string"
+            },
+            "price_per_day": {
+              "type": "integer"
+            },
+            "save_text": {
+              "type": "string"
+            },
+            "is_new": {
+              "type": "boolean"
+            },
+            "selected": {
+              "type": "boolean"
+            },
+            "main_price": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "days",
+            "price_per_day",
+            "save_text",
+            "is_new",
+            "selected",
+            "main_price"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "days": {
+              "type": "string"
+            },
+            "price_per_day": {
+              "type": "integer"
+            },
+            "save_text": {
+              "type": "string"
+            },
+            "is_new": {
+              "type": "boolean"
+            },
+            "selected": {
+              "type": "boolean"
+            },
+            "main_price": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "days",
+            "price_per_day",
+            "save_text",
+            "is_new",
+            "selected",
+            "main_price"
+          ]
+        }
+      ]
+    },
+    "other_caregivers": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "module_id",
+    "attendant",
+    "start_date",
+    "limit_days",
+    "sponsor_logo",
+    "pictures",
+    "safety_measures",
+    "description",
+    "expert_phone",
+    "faqs",
+    "packages",
+    "other_caregivers"
+  ]
+}

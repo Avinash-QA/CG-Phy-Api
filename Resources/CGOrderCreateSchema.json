@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "display": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "payment_gateway": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "display",
+    "type",
+    "date",
+    "payment_gateway",
+    "id"
+  ]
+}
